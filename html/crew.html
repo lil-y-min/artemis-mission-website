@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nabla" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/pixelify-sans" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/hello-bonia-serif" rel="stylesheet">
+  
+
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <title>Dream Team</title>
+
+  <!-- JavaScript files -->
+  <script src="../assets/js/navigation.js" defer></script>
+  <script src="../assets/js/tabs.js" defer></script>
+
+</head>
+
+<body class="crew">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <!-- logo -->
+    <div>
+      <a href="../index.html"><img src="../assets/img/shared/logo.svg" class="logo"></a>
+    </div>
+
+    <!-- hamburger menu button -->
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+
+    <!-- navbar -->
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./destination.html"><span
+              aria-hidden="true">01</span>Mission overview</a>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./crew.html"><span
+              aria-hidden="true">02</span>Dream team</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./technology.html"><span
+              aria-hidden="true">03</span>Engineering feats</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./mini-games.html"><span
+              aria-hidden="true">04</span>Mini Games</a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="main" class="grid-container grid-container--crew flow">
+    <!-- crew title -->
+    <h1 class="numbered-title"> Meet the chosen ones</h1>
+
+    <!-- crew tabs -->
+    <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
+      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0">
+        <span class="sr-only">The commander</span>
+      </button>
+      <button aria-selected="false" aria-controls="specialist-tab" role="tab" data-image="specialist-image"
+        tabindex="-1">
+        <span class="sr-only">The mission specialist</span>
+      </button>
+      <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot-image" tabindex="-1">
+        <span class="sr-only">The pilot</span>
+      </button>
+      <button aria-selected="false" aria-controls="engineer-tab" role="tab" data-image="engineer-image" tabindex="-1">
+        <span class="sr-only">The crew engineer</span>
+      </button>
+    </div>
+
+        <!-- commander info -->
+        <article class="crew-details flow" id="commander-tab" role="tabpanel" tabindex="0">
+          <header class="flow flow--space-small">
+            <h2 class="fs-600 uppercase ff-serif">Commander</h2>
+            <p class="fs-700 uppercase ff-serif">Jeremy Hansen</p>
+          </header>
+          <p class="text-light">
+            Jeremy Hansen is a pivotal figure in NASA's Artemis program, contributing his 
+            extensive expertise and leadership to the mission. As a colonel in the Canadian 
+            Armed Forces and a former fighter pilot, Hansen brings a wealth of experience 
+            and discipline to the team. He has also played a crucial role in the training of 
+            other astronaut candidates, ensuring that they are well-prepared for the rigors 
+            of space exploration. 
+          </p>
+        </article>
+
+    <!-- pilot info -->
+    <article hidden class="crew-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 uppercase ff-serif">Pilot</h2>
+        <p class="fs-700 uppercase ff-serif">Christina Koch</p>
+      </header>
+      <p class="text-light">
+        Christina Koch, an accomplished astronaut, is playing a pivotal role in NASA's Artemis 
+        program She is known for her extensive experience in space exploration, having completed 
+        three expeditions aboard the International Space Station and staying an impressive 328 d
+        ays in space. Koch's expertise and dedication make her a critical asset to the Artemis 
+        missions, as she helps pave the way for the next generation of lunar exploration.
+      </p>
+    </article>
+
+    <!-- mission specialist info -->
+    <article hidden class="crew-details flow" id="specialist-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 uppercase ff-serif">Mission Specialist</h2>
+        <p class="fs-700 uppercase ff-serif">Victor Glover</p>
+      </header>
+      <p class="text-light">
+        Victor Glover, a former pilot on NASA’s SpaceX Crew-1 and flight engineer, is a key 
+        figure in NASA's Artemis program. He contributed to scientific research and went on 
+        four spacewalks during his time with Crew-1, demonstrating his exceptional skills 
+        and dedication to space exploration. As part of Artemis, Glover is slated to play 
+        a crucial role in advancing human presence on the Moon.
+      </p>
+    </article>
+
+
+
+        <!-- flight engineer info -->
+        <article hidden class="crew-details flow" id="engineer-tab" role="tabpanel" tabindex="0">
+          <header class="flow flow--space-small">
+            <h2 class="fs-600 uppercase ff-serif">Flight Engineer </h2>
+            <p class="fs-700 uppercase ff-serif">Reid Wiseman</p>
+          </header>
+          <p class="text-light">
+            Reid Wiseman was a flight engineer aboard the ISS in 2014, he lived in outer space for more than 
+            165 days. Wiseman's extensive experience and dedication make him an invaluable asset to 
+            the Artemis missions, contributing to the advancement of human space exploration and the 
+            eventual journey to Mars.
+          </p>
+        </article>
+
+    <!-- commander image -->
+    <picture hidden id="engineer-image">
+      <img src="../assets/img/crew/wiseman.png" alt="Reid Wiseman">
+    </picture>
+
+    <!-- mission specialist image -->
+    <picture hidden id="pilot-image">
+      <img src="../assets/img/crew/koch.png" alt="Christina Koch">
+    </picture>
+
+    <!-- pilot image -->
+    <picture hidden id="specialist-image">
+      <img src="../assets/img/crew/image-victor-glover.png" alt="Victor Glover">
+    </picture>
+
+    <!-- flight engineer image -->
+    <picture id="commander-image">
+      <img src="../assets/img/crew/Hansen.png" alt="Jeremy Hansen">
+    </picture>
+  </main>
+</body>
+
+</html>

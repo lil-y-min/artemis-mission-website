@@ -1,0 +1,234 @@
+/*----------------*/
+/*---Space ship---*/
+/*----------------*/
+
+#container-space {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+#game-container {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+
+#spaceship {
+  width: 24px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url('../img/minigames/spaceship.png');
+  background-size: contain;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.asteroid, .ice-cream {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.asteroid {
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/minigames/asteroid.png');
+  animation:  spin 4s linear infinite;
+}
+
+.ice-cream {
+  width: 20px;
+  height: 40px;
+  background-image: url('../img/minigames/icecream.png');
+  animation:  spin 4s linear infinite;
+}
+
+#message {
+  text-align: center;
+  
+  font-size: 23px;
+  margin-top: 20px;
+
+}
+
+#level-message {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#moon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#moon img {
+  width: 100px;
+  animation: moonGrow 3s ease-in-out forwards;
+}
+
+
+@keyframes moonGrow {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 300px;
+  }
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*-----------------*/
+/*---Memory card---*/
+/*-----------------*/
+
+.memory-grid-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 1px;
+  grid-template-columns: repeat(6, 80px);
+  grid-template-rows: repeat(2, calc(80px / 2 * 3));
+}
+
+.container-card {
+  display : inline-block;
+  background-color: rgb(0, 0, 0);
+  border : 5px solid white;
+  padding: 40px;
+  width: 600px;
+  
+}
+
+.card {
+  height: calc(70px / 2 * 3);
+  width: 70px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.front-image {
+  width: 65px;
+  height: 90px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .back {
+  background-image: url("https://vinc.gumlet.io/gallery/blog/rare-nasa-cards-637831929931617306.jpg?w=200&dpr=2.6");
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  transform: rotateY(180deg);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 26px;
+  background-color: #252c8b9f;
+  color: white;
+}
+
+/*------------------------*/
+/*---Customize the moon---*/
+/*------------------------*/
+
+#controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#drawingArea {
+  border: 2px solid white;
+  /* make the top canvas fully transparent */
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+
+#bgCanvas {
+  background: url('../assets/img/minigames/moon.png') center/cover no-repeat;
+}
+
+
+h1, #controls{
+  text-align: center;
+}
+
+/*---------------------*/
+/*---Falling Bubbles --*/
+/*---------------------*/
+
+
+#gameContainerfall {
+  position: relative;
+  border: 2px solid white;
+}
+
+#gameCanvasfall {
+  background-color: black;
+  display: block;
+}
+

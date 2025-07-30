@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nabla" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/pixelify-sans" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/hello-bonia-serif" rel="stylesheet">
+  
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <title>Engineering Feats</title>
+
+  <!-- JavaScript files -->
+  <script src="../assets/js/navigation.js" defer></script>
+  <script src="../assets/js/tabs.js" defer></script>
+
+</head>
+
+<body class="technology">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <!-- logo -->
+    <div>
+      <a href="../index.html"><img src="../assets/img/shared/logo.svg" class="logo"></a>
+    </div>
+
+    <!-- hamburger menu button -->
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+
+    <!-- navbar -->
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./destination.html"><span
+              aria-hidden="true">01</span>Mission overview</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./crew.html"><span
+              aria-hidden="true">02</span>Dream team</a>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./technology.html"><span
+              aria-hidden="true">03</span>Engineering feats</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./mini-games.html"><span
+              aria-hidden="true">04</span>Mini Games</a>
+      </ul>
+    </nav>
+
+\
+  </header>
+
+  <main id="main" class="grid-container grid-container--technology flow">
+    <!-- technology title -->
+    <h1 class="numbered-title"> The stars of the show !</h1>
+
+    <!-- technology tabs -->
+    <div class="number-indicators flex" role="tablist" aria-label="technology list">
+      <button aria-selected="true" aria-controls="sls-tab" role="tab" data-image="vehicle-image" tabindex="0"
+        class="ff-serif">
+        1
+      </button>
+      <button aria-selected="false" aria-controls="module-tab" role="tab" data-image="capsule-image" tabindex="-1"
+        class="ff-serif">
+        2
+      </button>
+      <button aria-selected="false" aria-controls="ihab-tab" role="tab" data-image="spaceport-image" tabindex="-1"
+        class="ff-serif">
+        3
+      </button>
+      <button aria-selected="false" aria-controls="esprit-tab" role="tab" data-image="esprit-image" tabindex="-1"
+      class="ff-serif">
+        4
+      </button>
+      <button aria-selected="false" aria-controls="hls-tab" role="tab" data-image="hls-image" tabindex="-1"
+      class="ff-serif">
+        5
+    </button>
+    </div>
+
+    <!-- SLS content -->
+    <article class="technology-details flow" id="sls-tab" role="tabpanel" tabindex="0">
+      <h1 class="text-light fs-400 ff-sans-cond uppercase letter-spacing-1">Discover...
+        <span class="d-block fs-700 ff-bonia text-white">The SLS</span>
+      </h1>
+      <p class="text-light">
+        A super heavy-lift rocket that’s able to propel tons of material fast enough to deliver them at 384 400km ! It was purposefully designed for deep space missions and is the backbone of the mission as it already sent the Orion module on the  16th of November 2022 and will continue to carry out the other phases of the mission.
+The actual propulsion of the core stage is made possible thanks to the four RS-25 engines powered by liquid hydrogen and liquid oxygen, operating with a power of 71 140 horse power each. Those are the result of years of studies on high-pressure engines, started in the 1960s and applied first to the rocket Saturn V.
+
+      </p>
+    </article>
+
+    <!-- module content -->
+    <article hidden class="technology-details flow" id="module-tab" role="tabpanel" tabindex="0">
+      <h1 class="text-light fs-400 ff-sans-cond uppercase letter-spacing-1">Then the...
+        <span class="d-block fs-700 ff-bonia text-white">Orion module</span>
+      </h1>
+      <p class="text-light">
+        A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+        capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+        you'll spend your time during the flight. It includes a space gym, cinema,
+        and plenty of other activities to keep you entertained.
+      </p>
+    </article>
+
+    <!-- ihab content -->
+    <article hidden class="technology-details flow" id="ihab-tab" role="tabpanel" tabindex="0">
+      <h1 class="text-light fs-400 ff-sans-cond uppercase letter-spacing-1">The terminology...
+        <span class="d-block fs-700 ff-bonia text-white">Gateway - Ihab</span>
+      </h1>
+      <p class="text-light">
+        Created by the ESA, it will be the habitation of the lunar Gateway, a huge structure 
+        that will orbit the Moon and serve as an international space station to live and work. 
+        It will mark the transition between the ISS to more performing space habitats. The 
+        challenges are to build a lighter structure with an optimized thermal control system.
+        
+      </p>
+    </article>
+
+    <!-- esprit content -->
+    <article hidden class="technology-details flow" id="esprit-tab" role="tabpanel" tabindex="0">
+      <h1 class="text-light fs-400 ff-sans-cond uppercase letter-spacing-1">Next one...
+        <span class="d-block fs-700 ff-bonia text-white">Esprit</span>
+      </h1>
+      <p class="text-light">
+        Esprit is a pretty long acronym for ‘European System Providing Refuelling, Infrastructure 
+        and Telecommunications’. It will ensure that the communication between the Moon and the 
+        Gateway happens correctly. Its second goal is to refuel the Gateway with xenon and 
+        chemical propellants.
+      </p>
+    </article>
+
+        <!-- HLS content -->
+        <article hidden class="technology-details flow" id="hls-tab" role="tabpanel" tabindex="0">
+          <h1 class="text-light fs-400 ff-sans-cond uppercase letter-spacing-1">Last one...
+            <span class="d-block fs-700 ff-bonia text-white">HLS</span>
+          </h1>
+          <p class="text-light">
+            We obviously need a way to connect the Gateway and the lunar surface, and it 
+            is what’s done thanks to the Human Landing System. An actual lunar bus to 
+            transport the astronauts on a land full of surprises ! Because of the technical 
+            difficulties of conducting such an operation, NASA partners with five companies 
+            to adapt the module to the needs of frequent lunar surface missions ; Blue 
+            Origin, Dynetics, Lockheed Martin, Northrop Grumman and SpaceX.
+          </p>
+        </article>
+
+    <!-- sls image -->
+    <picture id="vehicle-image">
+      <img id="vehicle-landscape" src="https://images-assets.nasa.gov/image/MAF_20220830__KSC_Artemis1_epb_008/MAF_20220830__KSC_Artemis1_epb_008~large.jpg?w=1280&h=1920&fit=clip&crop=faces%2Cfocalpoint"
+        alt="Launch vehicle">
+      <img id="vehicle-portrait" src="https://images-assets.nasa.gov/image/MAF_20220830__KSC_Artemis1_epb_008/MAF_20220830__KSC_Artemis1_epb_008~large.jpg?w=1280&h=1920&fit=clip&crop=faces%2Cfocalpoint" alt="Launch vehicle">
+    </picture>
+
+    <!-- module image -->
+    <picture hidden id="capsule-image">
+      <img id="capsule-landscape" src=".https://ichef.bbci.co.uk/news/976/cpsprodpb/F511/production/_121173726_silver_1.jpg" alt="Space capsule">
+      <img id="capsule-portrait" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/F511/production/_121173726_silver_1.jpg" alt="Space capsule">
+    </picture>
+
+    <!-- ihab image -->
+    <picture hidden id="spaceport-image">
+      <img id="spaceport-landscape" src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2021/01/i-hab_for_gateway/22406220-2-eng-GB/I-Hab_for_Gateway_pillars.png" alt="Spaceport">
+      <img id="spaceport-portrait" src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2021/01/i-hab_for_gateway/22406220-2-eng-GB/I-Hab_for_Gateway_pillars.png" alt="Spaceport">
+    </picture>
+
+    <!-- esprit image -->
+    <picture hidden id="esprit-image">
+      <img id="esprit-landscape" src=".https://i0.wp.com/spacenews.com/wp-content/uploads/2020/10/gateway-aug2020.jpg?fit=879%2C494&ssl=1" alt="esprit">
+      <img id="esprit-portrait" src="https://i0.wp.com/spacenews.com/wp-content/uploads/2020/10/gateway-aug2020.jpg?fit=879%2C494&ssl=1" alt="esprit">
+    </picture>
+
+      <!-- hls image -->
+      <picture hidden id="hls-image">
+        <img id="hls-landscape" src="https://www.nasa.gov/wp-content/uploads/2022/11/spacex_starship_hls_artemis_iii_2_crew_0.jpg" alt="hls">
+        <img id="hls-portrait" src="https://www.nasa.gov/wp-content/uploads/2022/11/spacex_starship_hls_artemis_iii_2_crew_0.jpg" alt="hls">
+      </picture>
+
+  </main>
+
+</body>
+
+</html>

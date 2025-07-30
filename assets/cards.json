@@ -1,0 +1,38 @@
+[
+    {
+        "image": "../assets/img/minigames/violet.jpg",
+        "name": "violet"
+    },
+    {
+        "image": "../assets/img/minigames/flower.jpg",
+        "name": "flower"
+    },
+    {
+        "image": "../assets/img/minigames/nasa.jpg",
+        "name": "nasa"
+    },
+    {
+        "image": "../assets/img/minigames/block.png",
+        "name": "block"
+    },
+    {
+        "image": "../assets/img/minigames/boom.jpg",
+        "name": "boom"
+    },
+    {
+        "image": "../assets/img/minigames/crewww.jpg",
+        "name": "crewww"
+    },
+    {
+        "image": "../assets/img/minigames/logo.jpg",
+        "name": "logo"
+    },
+    {
+        "image": "../assets/img/minigames/launch.jpg",
+        "name": "launch"
+    },
+    {
+        "image": "../assets/img/minigames/icecream.jpg",
+        "name": "icecream"
+    }
+]

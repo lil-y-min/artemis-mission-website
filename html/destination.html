@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nabla" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/pixelify-sans" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/hello-bonia-serif" rel="stylesheet">
+  
+
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <title>Mission overview</title>
+
+  <!-- JavaScript files -->
+  <script src="../assets/js/navigation.js" defer></script>
+  <script src="../assets/js/tabs.js" defer></script>
+
+</head>
+
+<body class="destination">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <!-- logo -->
+    <div>
+      <a href="../index.html"><img src="../assets/img/shared/logo.svg" class="logo"></a>
+    </div>
+
+    <!-- hamburger menu button -->
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+
+    <!-- navbar -->
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./destination.html"><span
+              aria-hidden="true">01</span>Mission overview</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./crew.html"><span
+              aria-hidden="true">02</span>Dream team</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./technology.html"><span
+              aria-hidden="true">03</span>Engineering feats</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./mini-games.html"><span
+              aria-hidden="true">04</span>Mini Games</a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="main" class="grid-container grid-container--destination flow">
+    <!-- destination title -->
+    <h1 class="numbered-title"> Discover the mission</h1>
+
+    <!-- destination image -->
+    <!-- Worldwide project -->
+    <picture id="moon-image">
+      <source srcset="../assets/img/destination/image-moon.webp" type="image/webp">
+      <img src="../assets/img/destination/image-moon.png" alt="the moon">
+    </picture>
+    <!-- Challenges -->
+    <picture hidden id="mars-image">
+      <source srcset="../assets/img/destination/image-mars.webp" type="image/webp">
+      <img src="../assets/img/destination/image-mars.png" alt="the mars">
+    </picture>
+    <!-- Main phases -->
+    <picture hidden id="europa-image">
+      <source srcset="../assets/img/destination/image-europa.webp" type="image/webp">
+      <img src="../assets/img/destination/image-europa.png" alt="the europa">
+    </picture>
+
+
+    <!-- destination tabs -->
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+      <button aria-selected="true" role="tab" aria-controls="moon-tab"
+        class="uppercase ff-sans-cond fs-700 text-light letter-spacing-2" tabindex="0" data-image="moon-image">
+        1
+      </button>
+      <button aria-selected="false" role="tab" aria-controls="mars-tab"
+        class="uppercase ff-sans-cond fs-700 text-light letter-spacing-2" tabindex="-1" data-image="mars-image">
+        2
+      </button>
+      <button aria-selected="false" role="tab" aria-controls="europa-tab"
+        class="uppercase ff-sans-cond fs-700 text-light letter-spacing-2" tabindex="-1" data-image="europa-image">
+        3
+      </button>
+    </div>
+
+    <!-- destination content -->
+    <!-- Worldwide project -->
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <!-- name -->
+      <h2 class="fs-700 uppercase ff-bonia">Worldwide project</h2>
+
+      <!-- information -->
+      <p class="text-light">
+        The Artemis program which is led the United States’ space agency was established in 2017
+        and aims at bringing back humans on the Moon. The mission as a whole is currently divided
+        into six main parts and they will be accomplished with the help of various worldwide space
+        agencies; mainly the ESA (Europe), JAXA (Japan) and CSA (Canada).
+      </p>
+    </article>
+
+    <!-- Challenges -->
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0" role="tabpanel">
+      <!-- name -->
+      <h2 class="fs-700 uppercase ff-bonia">Challenges</h2>
+
+      <!-- information -->
+      <p class="text-light">
+        Getting a foothold on the Moon is definitely not going to be a piece of cake as the lunar
+        environment is far from being welcoming for human life. There are many challenges to be taken
+        into account, the main ones being the absence of atmosphere, the major temperature swings,
+        the razor-sharp dust and finding a source of water. Having to face those inhospitable conditions
+        will help foster development of new technologies as well as making engineers the happiest people on Earth.
+      </p>
+
+    </article>
+
+    <!-- Main phases -->
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0" role="tabpanel">
+      <!-- name -->
+      <h2 class="fs-700 uppercase ff-bonia">Main phases</h2>
+
+      <!-- information -->
+      <p class="text-light">
+        The first phase of the mission started last year with Artemis I which was a test flight
+        that was reaching for the orbit of the Moon. Then Artemis II will be similar to the latter
+        but as a crewed flight, and the following one will be paramount in the whole mission as it
+        is when the team of astronauts is going to be walking on the lunar surface. Artemis 4 to 6
+        will be focusing on delivering the different part of a lunar space station (Gateway), as
+        well as starting to make use of it as a research station, in the way that astronauts could
+        go back and forth between the orbiting structure and the Moon.
+      </p>
+
+    </article>
+
+  </main>
+
+  <body>
+
+  </body>
+
+</html>

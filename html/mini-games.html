@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/nabla" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/pixelify-sans" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/hello-bonia-serif" rel="stylesheet">
+  
+
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/minigames.css">
+  <title>Mini Games</title>
+
+  <!-- JavaScript files -->
+  <script src="../assets/js/navigation.js" defer></script>
+  <script src="../assets/js/tabs.js" defer></script>
+  <script src="../assets/js/spaceship.js" defer></script>
+  <script src="../assets/js/memory.js" defer></script>
+  <script src="../assets/js/draw.js" defer></script>
+</head>
+
+<body class="mini-games">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <!-- logo -->
+    <div>
+      <a href="../index.html"><img src="../assets/img/shared/logo.svg" class="logo"></a>
+    </div>
+
+    <!-- hamburger menu button -->
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+
+    <!-- navbar -->
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./destination.html"><span
+              aria-hidden="true">01</span>Mission overview</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./crew.html"><span
+              aria-hidden="true">02</span>Dream team</a>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./technology.html"><span
+              aria-hidden="true">03</span>Engineering feats</a>
+        <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="./mini-games.html"><span
+              aria-hidden="true">04</span>Mini Games</a>
+      </ul>
+    </nav>
+
+    <!-- my ::after goes here -->
+  </header>
+
+  <main id="main" class="grid-container grid-container--technology flow">
+    <!-- technology title -->
+    <h1 class="numbered-title">Time to have fun</h1>
+
+    <!-- technology tabs -->
+    <div class="number-indicators flex" role="tablist" aria-label="technology list">
+      <button aria-selected="true" aria-controls="spaceship-tab" role="tab" data-image="vehicle-image" tabindex="0"
+        class="ff-serif">
+        1
+      </button>
+      <button aria-selected="false" aria-controls="memory-tab" role="tab" data-image="capsule-image" tabindex="-1"
+        class="ff-serif">
+        2
+      </button>
+      <button aria-selected="false" aria-controls="draw-tab" role="tab" data-image="spaceport-image" tabindex="-1"
+        class="ff-serif">
+        3
+      </button>
+    </div>
+
+    <!-- spaceship content -->
+    <article class="technology-details flow" id="spaceship-tab" role="tabpanel" tabindex="0">
+      <h1 class="text-light fs-400 ff-sans-cond uppercase letter-spacing-1">First Game...
+        <span class="d-block fs-700 ff-pixelify text-white">Reach the moon !</span>
+      <div id="container-space">
+        <div id="info">
+            <div>Score: <span id="score">0</span></div>
+            <div>Level: <span id="level">1</span></div>
+        </div>
+        <div id="game-container">
+            <div id="spaceship"></div>
+            <div id="message"></div>
+            <div id="moon"></div>
+        </div>
+    </div>
+    </article>
+
+    <!-- memory content -->
+    <article hidden class="technology-details flow" id="memory-tab" role="tabpanel" tabindex="0">
+      <h1 class="text-light fs-400 ff-sans-cond uppercase letter-spacing-1">Second Game...
+        <span class="d-block fs-700 ff-pixelify text-white">Memory Cards</span>
+      <div class="container-card">
+        <div class="memory-grid-container"></div>
+        <p>Tries: <span class="memory-score"></span></p>
+        <div class="actions">
+            <button onclick="restart()">Restart</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- draw content -->
+    <article hidden class="technology-details flow" id="draw-tab" role="tabpanel" tabindex="0">
+      <h1 class="text-light fs-400 ff-sans-cond uppercase letter-spacing-1">Last Game...
+        <span class="d-block fs-700 ff-pixelify text-white">Customize the moon !</span>
+        <div style="position: relative; width: 500px; height: 500px;">
+          <canvas id="bgCanvas" width="500" height="500" style="position: absolute; top: 0; left: 0; z-index: 0;"></canvas>
+          <canvas id="drawingArea" width="500" height="500" style="position: absolute; top: 0; left: 0; z-index: 1;"></canvas>
+        </div>
+
+        <div class="controls">
+          <label for="colorPicker">Color:</label>
+          <input type="color" id="colorPicker" value="#ff0000">
+
+          <label for="brushSize">Size:</label>
+          <input type="range" id="brushSize" min="1" max="50" value="5">
+
+          <button id="toggleEraser">Erase</button>
+          <button id="eraseButton">Clear All</button>
+        </div>
+
+
+    </article> 
+
+  </main>
+
+</body>
+
+</html>
